@@ -1,0 +1,80 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: white;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color:red; */
+    display: flex;
+    align-items: center;
+    padding:0 90px ;
+    gap: 40px;
+    justify-content: flex-start;
+    position: fixed;
+    z-index:99 ;
+}
+#nav img{
+    height: 60px;
+} 
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+video{
+    height: 100%;
+   width: 100%;
+   object-fit: cover; 
+   z-index: -1;
+   position: fixed;
+}
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+ } 
+ #page1 h1{
+    font-size: 80px;
+    font-weight: 900;
+    position: relative;
+ }
+ #page1 h1::before{
+    content: "abc defr ghj";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left:-4px;
+    -webkit-text-stroke:2px rgba(104, 44, 99, 0.918) ;
+     z-index: -1;
+}
+ #page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+ }
+ #page1 p{
+    font-size: 15px;
+    font-weight: 500;
+    width: 40%;
+ }
+ #page2{
+    height: 100vh;
+    width: 100%;
+ }
